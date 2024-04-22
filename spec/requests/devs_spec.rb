@@ -11,7 +11,7 @@ RSpec.describe "Devs", type: :request do
     end
 
     it "returns pong" do
-      message = JSON.parse(response.body)["message"]
+      message = response_body["message"]
       expect(message).to eq("pong")
     end
   end
